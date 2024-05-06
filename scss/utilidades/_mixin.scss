@@ -1,0 +1,21 @@
+@mixin flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 50px;
+    padding: 10px 30px;
+}
+.header{
+    @include flex;
+}
+@mixin nav{
+    margin-right: 30px;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+.nav .ul{
+@include nav
+}
+
+

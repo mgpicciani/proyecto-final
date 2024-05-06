@@ -1,0 +1,130 @@
+//estilos de la pagina home
+//llamo al archivo variables
+@import"../utilidades/variables";
+*{
+    /*espacio exterior*/
+    margin: 0;
+    /*  espacio interior*/
+    padding: 0;
+    /*combinan los tamaños*/
+    box-sizing: border-box;
+}
+/* estilos generales*/
+body{
+    background-color:$color-principal ;
+    color: $color-secundario;
+}
+/*estilos de header*/
+header{
+    background-color:$color-terciario ;
+    color: $color-cuaternario;
+    margin: 0px 50px;
+    padding: 10px 30px;
+    /* flex*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img{
+    width:25% ;
+}
+
+header nav{
+    margin-right: 30px;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+/* estilos de main */
+ main{
+    margin: 0px 50px;
+    background-color: $color-terciario;
+    color: $color-cuaternario;
+    
+ }
+
+ .textos{
+    text-align: right;
+    list-style: none;
+    display:grid;
+    
+}
+/* estilos de section*/
+section div{
+    margin-left: 50px;
+    display: flex;
+    padding: 10px;
+    
+}
+section div img{
+    width: 50%;
+    
+}
+/* estilos de footer*/
+footer h3{
+    margin:0px 50px;
+    background-color:$color-terciario;
+    color:$color-cuaternario;
+    text-align: center;
+}
+/* estilo de main de cabañas*/
+main.contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    margin-left: 50px;
+}
+
+main.contenedor div {
+    width: 100%;
+    min-width: 300px;
+    max-width: 500px;
+    
+}
+/* mq de tablet*/
+@media screen and (min-width: 600px ) {
+    main .contenedor div {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 50%);
+    }
+    main div .img-cuatro{
+        grid-column: span 2;
+    }
+}
+/*mq de desktop*/
+@media screen and ( min-width: 1024px){
+ 
+ }
+
+ /* estilo de section de contactanos */
+ section .redes {
+    margin:0px 50px;
+    display: grid;
+    justify-content: space-around;
+    
+ }
+/*estilos en section de ubicacion*/
+  section .ubicacion img{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+   
+  }
+  div .lista {
+    display: grid;
+    justify-content: space-around;
+    width: 50%;
+ }
+ /*estilos en actividades*/
+ section .actividades{
+    display: grid;
+    margin: 0px 50px;
+}
+section .actividades a.boton{
+    color: $color-secundario;
+}
